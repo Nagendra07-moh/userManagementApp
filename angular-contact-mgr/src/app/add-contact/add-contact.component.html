@@ -1,0 +1,47 @@
+<div class="container mt-3 ms-lg-3">
+   <div class="row">
+      <div class="col ms-0">
+         <p class="h3 font-bold text-danger">Add Contact</p>
+         <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quod, repellendus quae magnam doloribus nisi voluptate laudantium fugit enim voluptatibus autem alias exercitationem? Alias explicabo nam quo neque, laborum ipsa!</p>
+      </div>
+   </div>
+</div>
+
+<!-- CREATE CONTACT FORM STARTS HERE! -->
+
+<div class="cointaner ms-4 mb-2">
+   <div class="row">
+      <div class="col-sm-4">
+         <form>
+            <div class="mb-2 ms-1 ">
+               <input type="text" class="form-control" placeholder="Name" name ="name" [(ngModel)]="name">
+            </div>
+            <div class="mb-2 ms-1">
+               <input type="text" class="form-control" placeholder="Photo Url" name="images" [(ngModel)]="url"  >
+            </div><div class="mb-2 ms-1">
+               <input type="number" class="form-control" placeholder="Mobile" name="number" [(ngModel)] = "number">
+            </div><div class="mb-2 ms-1">
+               <select class="form-control" [(ngModel)]="drop" name="drop" >
+                  <option >Select</option>
+                  <option  *ngFor="let x of dropList" value="{{x}}">{{x}}</option>
+               </select>
+            </div> <div class="mb-2 ms-1">
+               <input type="email" class="form-control" placeholder="Email" name="email" [(ngModel)] = "email" >
+            </div> <div class="mb-2 ms-1">
+               <input type="text" class="form-control" placeholder="Type"  name="type" [(ngModel)] = "Type">
+            </div>
+            <div class="mb-2 ms-1">
+               <input type="text" class="form-control" placeholder="Title" name="title" [(ngModel)] = "Title">
+            </div>
+            <div class="mb-2 ms-1">
+               <input type="button" class="btn btn-danger" type="submit" (click)="save()" (click) = "changeUrl()">
+               <a routerLink="/" class="btn btn-dark ms-2">Close</a>
+            </div>
+         </form>
+     </div>
+     <div class="col-sm-4">
+      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ficon-library.com%2Fimages%2Fuser-icon-png-transparent%2Fuser-icon-png-transparent-17.jpg&f=1&nofb=1&ipt=b695cb882e5a539caf0883f1c3a5d37320edab6698f419f95b2f6c894885f477&ipo=images" alt="" class="ms-lg-4 contact-image">
+     </div>
+   </div>
+</div>
+
