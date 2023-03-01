@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class EditContactComponent {
 
+  name = ''
+  url = ''
+  mobile =''
+  email =''
+  type = ''
+  title = ''
+
+
+  
+
+
 }

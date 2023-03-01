@@ -33,7 +33,7 @@
 <!-- CARDS -->
 <div class="cointaner mt-4 ms-3">
    <div class="row">
-      <div class="col-md-6" *ngFor="let item of TempList">
+      <div class="col-md-6" *ngFor="let item of TempList;let i = index">
          <div class="card list-group-item-danger shadow-lg " >
             <div class="card-body" >
                <div class="row align-items-center mb-2" >
@@ -55,9 +55,9 @@
                         <i class="fa fa-eye"></i>
                      </a>
                      <a routerLink="/edit/:contactId" class="btn btn-primary my-2">
-                        <i class="fa fa-eye"></i>
+                        <i class="fa fa-eye" (click) = 'update(i)'></i>
                      </a>
-                     <button class="btn btn-danger"><i class ="fa fa-trash-alt my-1" ></i></button>
+                     <button class="btn btn-danger"><i class ="fa fa-trash-alt my-1" (click)= 'del(i)' ></i></button>
                   </div>
                </div>
 

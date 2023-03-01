@@ -15,6 +15,9 @@ export class RestApiService {
   addContact(obj:any){
     return this.http.post(this.url + '/add',obj)
   }
+  del(index:any){
+    return this.http.post(this.url + '/del',{ind:index})
+  }
 
   
 }
