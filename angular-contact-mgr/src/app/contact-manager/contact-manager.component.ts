@@ -1,5 +1,4 @@
 import { Component,OnInit,OnChanges, SimpleChanges } from '@angular/core';
-import { EditContactComponent } from '../edit-contact/edit-contact.component';
 import { RestApiService } from '../rest-api.service';
 
 @Component({
@@ -8,7 +7,7 @@ import { RestApiService } from '../rest-api.service';
   styleUrls: ['./contact-manager.component.css']
 })
 export class ContactManagerComponent implements OnInit  {
-    constructor(private myser:RestApiService,private object:EditContactComponent){}
+    constructor(private myser:RestApiService){}
     allContact:any
     uniqueNames:any = new Set([])
     ngOnInit(): void {
@@ -38,24 +37,7 @@ export class ContactManagerComponent implements OnInit  {
       }
     }
     
-  del(i:any){
-    this.myser.del(i).subscribe((data)=>{
-      console.log(data)
-      this.allContact.splice(i,1)
-    },(err)=>{
-     console.log(err)
-    })
-  }
-
-  // ind:any
-  // update(i:any){
-  //   this.ind = i;
-  //   let object2 = this.object.new_obj
-
-  // }
-    
-    
-
+  ind:any
   
 
 }

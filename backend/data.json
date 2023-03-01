@@ -37,9 +37,8 @@
     "drop": "Select2"
   },
   {
-    "id":5,
     "name": "Nagendra mohan34",
-    "url": "https://www.google.com",
+    "url": "www.google.com",
     "mobile": 6206653065,
     "email": "nagendra.mohan.5@gmail.com",
     "Title": "Mr.",
@@ -57,7 +56,7 @@
   },
   {
     "name": "Nagendra mohan13231",
-    "url": "https://www.google.com",
+    "url": "www.google.com",
     "mobile": 6206653065,
     "email": "nagendra.mohan.5@gmail.com",
     "Title": "Mr.",
@@ -90,14 +89,6 @@
     "Title": "sadasda",
     "Type": "select1",
     "drop": "Select2"
-  },
-  {
-    "name": "Nagendra mohan",
-    "url": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.mJuyF-aUdKWXspqgrySeVAHaH_%26pid%3DApi&f=1&ipt=060fecf3061cbef5b097473e6a5ce19af846315230b7a2c174747c1df0efd61d&ipo=images",
-    "number": 6206653065,
-    "email": "nagendra.mohan.5@gmail.com",
-    "Title": "Mr.",
-    "Type": "Male",
-    "drop": "Select1"
   }
+  
 ]

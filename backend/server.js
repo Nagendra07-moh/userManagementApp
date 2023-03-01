@@ -55,21 +55,3 @@ app.post('/add',(req,res)=>{
    res.send({"msg":"data has been pushed"})
 
 })
-
-
-app.post('/del',(req,res)=>{
-
-   data = require('./data.json')
-   let ind =req.body.ind
-   console.log(ind);
-   data.splice(ind,1);
-   console.log(data)
-   res.send({"output": "Data has been deleted"})
-});
-   
-
-app.post('/update',(req,res)=>{
-   let ind = req.body.ind
-   console.log(ind)
-   
-});
