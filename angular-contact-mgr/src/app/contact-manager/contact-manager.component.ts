@@ -38,6 +38,17 @@ export class ContactManagerComponent implements OnInit  {
     }
     
   ind:any
+  del(i:any){
+    this.myser.del(i).subscribe((data:any)=>
+    {
+      data = this.allContact;
+    },(err)=>{
+      console.log(err);
+    })
+    console.log(this.allContact[i]);
+    this.allContact.splice(i,1);
+  } 
+    
   
 
 }

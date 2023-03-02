@@ -16,5 +16,9 @@ export class RestApiService {
     return this.http.post(this.url + '/add',obj)
   }
 
+  del(ind:any){
+    return this.http.post(this.url + '/del',ind)
+  }
+
   
 }
